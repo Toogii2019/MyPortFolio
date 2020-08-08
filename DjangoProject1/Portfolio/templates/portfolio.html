@@ -5,29 +5,50 @@
 {% block content %}
 <div class="showcase">
     <div class="portfolio-container">
-        <div class="projects-front">
-            <img src="{% static 'img/pass_gen.gif' %}" alt="password_gen_app">
-            <a class="github-link" href="https://github.com/Toogii2019/Password_Generator/" target="_blank">Github Link</a>
-            <h3 class="project-description">Password Generator Application</h3>
-        </div>
-        <div class="projects-front">
-            <img src="{% static 'img/code_quiz.gif' %}" alt="code_quiz_app">
-            <a class="github-link" href="https://github.com/Toogii2019/code_quiz/" target="_blank">Github Link</a>
-            <h3 class="project-description">Code Quiz</h3>
-
-        </div>
-        <div class="projects-front">
-            <img src="{% static 'img/triply.gif' %}" alt="triply_app">
-            <a class="github-link" href="https://github.com/Toogii2019/Project1/" target="_blank">Github Link</a>
-            <h3 class="project-description">Trip Advisor Application</h3>
-
-        </div>
-        <div class="projects-front">
-            <img src="{% static 'img/weather_dashboard.gif' %}" alt="weather_dashboard_app">
-            <a class="github-link" href="https://github.com/Toogii2019/weather_dashboard/" target="_blank">Github Link</a>
-            <h3 class="project-description">Weather Dashboard application</h3>
-
-        </div>
+        <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="{% static 'img/pass_gen.gif' %}" alt="Paris" style="width:300px;height:200px">
+              </div>
+              <div class="flip-box-back">
+                <h2>Password Generator App</h2>
+                <p>Generates highly secure password</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="{% static 'img/code_quiz.gif' %}" alt="Paris" style="width:300px;height:200px">
+              </div>
+              <div class="flip-box-back">
+                <h2>Code Quiz App</h2>
+                <p>Choose between HTML, CSS and Javascript quizes and test your skill</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="{% static 'img/triply.gif' %}" alt="Paris" style="width:300px;height:200px">
+              </div>
+              <div class="flip-box-back">
+                <h2>Trip Advisor App</h2>
+                <p>Helps planning your trip</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="{% static 'img/weather_dashboard.gif' %}" alt="Paris" style="width:300px;height:200px">
+              </div>
+              <div class="flip-box-back">
+                <h2>Weather dashboard app</h2>
+                <p>Shows weather information on selected location</p>
+              </div>
+            </div>
+          </div>
     </div>
 </div>
 
