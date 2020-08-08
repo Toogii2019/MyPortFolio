@@ -16,7 +16,7 @@ body {
     line-height: 1.4;
 }
 
-.projects > img {
+.projects-front > img {
     width: auto;
     height: auto;
 }
@@ -91,9 +91,11 @@ a {
     text-decoration: none;
 }
 
-.projects {
+.projects-front {
     display: flex;
     flex-direction: column;
+    transition: opacity 1s ease-in;
+    transition-duration: var(--menu-speed);
 }
 
 .showcase .portfolio-container{
@@ -109,14 +111,20 @@ a {
 
 .project-description {
     display: none;
-    transition: opacity 1s ease-in;
-    transition-duration: var(--menu-speed);
+    color: white;
+
 
 
 }
 
-.projects:hover {
+.projects-front:hover {
     transform: scale(2);
     align-items: center;
     justify-content: center;
+
+}
+
+.github-link {
+    color:white;
+    font-weight: bold;
 }
