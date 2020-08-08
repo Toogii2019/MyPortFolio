@@ -77,8 +77,7 @@ body {
 .my-photo {
     width:300px;
     height: 300px;
-}
-
-img {
-    opacity: 0;
+    z-index: 0;
+    border: 1px solid;
+    background: var(--primary-color);
 }
