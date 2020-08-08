@@ -81,3 +81,20 @@ body {
     border: 1px solid;
     background: var(--primary-color);
 }
+
+
+a {
+    text-decoration: none;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-rows: repeat(1fr, 2);
+}

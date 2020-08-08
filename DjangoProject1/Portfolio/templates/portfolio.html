@@ -1,1 +1,30 @@
-<strong>Portfolio</strong>
+{% extends "base.html" %}
+{% load static %}
+
+{% block subtitle %}Portfolio{% endblock subtitle %}
+{% block content %}
+<div class="showcase">
+    <div class="portfolio-container showcase-inner">
+        <div class="projects">
+            <img src="{% static 'img/pass_gen.gif' %}">
+            <a href="https://github.com/Toogii2019/Password_Generator/">Github Link</a>
+        </div>
+        <div class="projects">
+            <img src="{% static 'img/code_quiz.gif' %}">
+            <a href="https://github.com/Toogii2019/code_quiz/">Github Link</a>
+        </div>
+        <div class="projects">
+            <img src="{% static 'img/pass_gen.gif' %}">
+            <a href="https://github.com/Toogii2019/Password_Generator/">Github Link</a>
+        </div>
+        <div class="projects">
+            <img src="{% static 'img/pass_gen.gif' %}">
+            <a href="https://github.com/Toogii2019/Password_Generator/">Github Link</a>
+        </div>
+        <div class="projects">
+            <img src="{% static 'img/pass_gen.gif' %}">
+            <a href="https://github.com/Toogii2019/Password_Generator/">Github Link</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
