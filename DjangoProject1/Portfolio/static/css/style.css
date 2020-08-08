@@ -16,6 +16,11 @@ body {
     line-height: 1.4;
 }
 
+.projects > img {
+    width: auto;
+    height: auto;
+}
+
 .container {
     max-width: 960px;
     margin: auto;
@@ -82,7 +87,6 @@ body {
     background: var(--primary-color);
 }
 
-
 a {
     text-decoration: none;
 }
@@ -92,9 +96,27 @@ a {
     flex-direction: column;
 }
 
-.portfolio-container {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(1fr, 3);
-    grid-template-rows: repeat(1fr, 2);
+.showcase .portfolio-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+
+.project-description {
+    display: none;
+    transition: opacity 1s ease-in;
+    transition-duration: var(--menu-speed);
+
+
+}
+
+.projects:hover {
+    transform: scale(2);
+    align-items: center;
+    justify-content: center;
 }

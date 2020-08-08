@@ -4,27 +4,54 @@
 {% block subtitle %}Portfolio{% endblock subtitle %}
 {% block content %}
 <div class="showcase">
-    <div class="portfolio-container showcase-inner">
+    <div class="portfolio-container">
         <div class="projects">
-            <img src="{% static 'img/pass_gen.gif' %}">
-            <a href="https://github.com/Toogii2019/Password_Generator/">Github Link</a>
+            <img src="{% static 'img/pass_gen.gif' %}" alt="password_gen_app">
+            <a href="https://github.com/Toogii2019/Password_Generator/" target="_blank">Github Link</a>
+            <h3 class="project-description">Password Generator Application</h3>
         </div>
         <div class="projects">
-            <img src="{% static 'img/code_quiz.gif' %}">
-            <a href="https://github.com/Toogii2019/code_quiz/">Github Link</a>
+            <img src="{% static 'img/code_quiz.gif' %}" alt="code_quiz_app">
+            <a href="https://github.com/Toogii2019/code_quiz/" target="_blank">Github Link</a>
+            <h3 class="project-description">Code Quiz</h3>
+
         </div>
         <div class="projects">
-            <img src="{% static 'img/pass_gen.gif' %}">
-            <a href="https://github.com/Toogii2019/Password_Generator/">Github Link</a>
+            <img src="{% static 'img/triply.gif' %}" alt="triply_app">
+            <a href="https://github.com/Toogii2019/Project1/" target="_blank">Github Link</a>
+            <h3 class="project-description">Trip Advisor Application</h3>
+
         </div>
         <div class="projects">
-            <img src="{% static 'img/pass_gen.gif' %}">
-            <a href="https://github.com/Toogii2019/Password_Generator/">Github Link</a>
-        </div>
-        <div class="projects">
-            <img src="{% static 'img/pass_gen.gif' %}">
-            <a href="https://github.com/Toogii2019/Password_Generator/">Github Link</a>
+            <img src="{% static 'img/weather_dashboard.gif' %}" alt="weather_dashboard_app">
+            <a href="https://github.com/Toogii2019/weather_dashboard/" target="_blank">Github Link</a>
+            <h3 class="project-description">Weather Dashboard application</h3>
+
         </div>
     </div>
 </div>
+
+<script>
+
+$(".projects").on("click", function(event) {
+    console.log(event.target.alt);
+    switch(event.target.alt) {
+        case "password_gen_app":
+            console.log("First");
+            break;
+        
+        case "code_quiz_app":
+            console.log("Second");
+            break;
+        case "triply_app":
+            console.log("third");
+            break;
+        case "weather_dashboard_app":
+            console.log("fourth");
+            break;
+        default:
+            break;
+    }
+})
+</script>
 {% endblock %}
